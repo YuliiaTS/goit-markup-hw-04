@@ -143,13 +143,14 @@ ul li.current a {
 }
 .mail::before{
     display: inline-block;
+    align-items: center;
     content: '';
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    background-color: red;
-    background-image: url();
+    background-image: url(../images/svg/letter.svg);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .hero {
@@ -223,16 +224,16 @@ ul li.current a {
 }
 
 .icon-antenna::before {
-    background-image: url(../images/feature/antenna.svg);
+    background-image: url(../images/svg/antenna.svg);
 }
 .icon-clock::before {
-    background-image: url(../images/feature/clock.svg);
+    background-image: url(../images/svg/clock.svg);
 }
 .icon-diagram::before {
-    background-image: url(../images/feature/diagram.svg);
+    background-image: url(../images/svg/diagram.svg);
 }
 .icon-astronaut::before {
-    background-image: url(../images/feature/astronaut.svg);
+    background-image: url(../images/svg/astronaut.svg);
 }
 
 .feature-title-item {
