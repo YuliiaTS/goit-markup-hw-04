@@ -141,38 +141,50 @@ ul li.current a {
 .contact-us-header:focus {
     color: var(--brand-color);
 }
+
+.mail, .tel {
+    display: flex;
+    align-items: center;
+}
+
 .mail::before{
     display: inline-block;
-    align-items: center;
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 12px;
     margin-right: 10px;
     background-image: url(../images/svg/letter.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tel::before {
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url(../images/svg/tel.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero {
-    background: #2F303A;
     text-align: center;
     padding: 200px 0;
-}
-
-.overlay{
-    height: 600px;
-    max-width: 1600px;
-    margin: 0 auto;
-    background: #C4C4C4;
+    background: #2F303A;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-    );
-    background-image: url(../images/img_hero.jpg);
+    ), url(../images/img_hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    /* max-width: 1600px;
+    margin: 0 auto; */
 }
 
 .hero-title {
@@ -302,6 +314,7 @@ ul li.current a {
 }
 
 .team-text {
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
@@ -330,6 +343,30 @@ ul li.current a {
     padding: 30px 0;
     border-radius: 0px 0px 4px 4px;
 }
+
+.team-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-social-item + .team-social-item {
+    margin-left: 10px;
+}
+
+.team-social-link {
+    width: 44px;
+    height: 44px;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.team-social-link:hover,
+.team-social-link:focus{
+    background-color: var(--brand-color);
+}
+
 
 .clients {
     padding: 94px 0;
@@ -466,4 +503,33 @@ ul li.current a {
 
 address {
     font-style: normal;
+}
+
+.footer-social {
+    margin-left: 70px;
+
+}
+
+.footer-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
