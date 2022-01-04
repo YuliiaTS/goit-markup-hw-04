@@ -141,10 +141,37 @@ ul li.current a {
 .contact-us-header:focus {
     color: var(--brand-color);
 }
+.mail::before{
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: red;
+    background-image: url();
+    background-size: contain;
+}
+
 .hero {
     background: #2F303A;
     text-align: center;
     padding: 200px 0;
+}
+
+.overlay{
+    height: 600px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #C4C4C4;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    );
+    background-image: url(../images/img_hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -182,6 +209,30 @@ ul li.current a {
 
 .feature {
     padding-top: 94px;
+}
+
+.feature-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #F5F4FA;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/feature/antenna.svg);
+}
+.icon-clock::before {
+    background-image: url(../images/feature/clock.svg);
+}
+.icon-diagram::before {
+    background-image: url(../images/feature/diagram.svg);
+}
+.icon-astronaut::before {
+    background-image: url(../images/feature/astronaut.svg);
 }
 
 .feature-title-item {
@@ -234,7 +285,7 @@ ul li.current a {
     padding-bottom: 94px;
 }
 
-.team-title, .works-title {
+.team-title, .works-title, .clients-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -268,10 +319,44 @@ ul li.current a {
     width: 270px;
 }
 
+.list-team .item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .card-team {
     background-color: var(--accent-color);
     text-align: center;  
     padding: 30px 0;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.clients {
+    padding: 94px 0;
+}
+
+.clients-title {
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+}
+
+.clients-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-item {
+    width: calc((100% - 180px) / 6);
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+    border: 1px solid #2196F3;
 }
 
 .portfolio {
@@ -307,6 +392,7 @@ ul li.current a {
 .btn-portfolio:focus{
     background: var(--brand-color);
     color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .gallery-list {
@@ -320,6 +406,10 @@ ul li.current a {
     width: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
+}
+
+.gallery-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-list-title {
