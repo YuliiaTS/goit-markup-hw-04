@@ -580,10 +580,12 @@ address {
     align-items: center;
     border-radius: 50%;
 }
-.bird {
-    background-color:var(--brand-color);
-}
 
 .footer-social-icon {
     fill: var(--accent-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--brand-color);
 }
