@@ -141,21 +141,6 @@ ul li.current a {
     align-items: center;
 }
 
-/* .mail {
-    width: 16px;
-    height: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tel {
-    width: 10px;
-    height: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .contact-us-icon {
     fill: currentColor;
     margin-right: 10px;
@@ -164,36 +149,6 @@ ul li.current a {
 .contact-us-header:focus {
     color: var(--brand-color);
 }
-
-
-/* .mail, .tel {
-    display: flex;
-    align-items: center;
-}
-
-.mail::before{
-    display: inline-block;
-    content: '';
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-image: url(../images/svg/letter.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.tel::before {
-    display: inline-block;
-    content: '';
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background-image: url(../images/svg/tel.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
 
 .hero {
     text-align: center;
