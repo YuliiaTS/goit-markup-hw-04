@@ -224,7 +224,7 @@ ul li.current a {
     padding-top: 94px;
 }
 
-.feature-item::before {
+/* .feature-item::before {
     display: block;
     content: "";
     height: 120px;
@@ -246,6 +246,16 @@ ul li.current a {
 }
 .icon-astronaut::before {
     background-image: url(../images/svg/astronaut.svg);
+} */
+
+.feature-thumb {
+    background-color: #F5F4FA;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.feature-icon {
+    fill: var(--text-color);
 }
 
 .feature-title-item {
