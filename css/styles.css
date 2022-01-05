@@ -137,27 +137,33 @@ ul li.current a {
     color: #757575;
     padding: 32px 0;
 }
-.contact-us-header:hover,
-.contact-us-header:focus {
-    color: var(--brand-color);
-}
 
-.contact-mail-icon {
-    fill: #757575;
+.mail {
     width: 16px;
     height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
 }
-
-.contact-tel-icon {
-    fill: #757575;
+.tel {
     width: 10px;
     height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
 }
 
-.contact-mail-icon:hover,
-.contact-mail-icon:focus {
+.contact-us-icon {
+    fill: #757575;
+}
+.contact-us-header:hover .contact-us-icon,
+.contact-us-header:focus .contact-us-icon {
+    color: var(--brand-color);
     fill: var(--brand-color);
 }
+
 
 /* .mail, .tel {
     display: flex;
@@ -271,6 +277,7 @@ ul li.current a {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .feature-icon {
@@ -403,9 +410,6 @@ ul li.current a {
     color: var(--accent-color);
 }
 
-
-
-
 .clients {
     padding: 94px 0;
 }
@@ -429,15 +433,16 @@ ul li.current a {
     border-radius: 4px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.client-icon {
+    fill: #AFB1B8;
+}
+
+.clients-item:hover .client-icon,
+.clients-item:focus .client-icon {
     border: 1px solid #2196F3;
-}
-
-.client-icon:hover,
-.client-icon:focus {
     fill: var(--brand-color);
 }
 
