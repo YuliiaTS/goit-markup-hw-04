@@ -136,15 +136,17 @@ ul li.current a {
     letter-spacing: 0.02em;
     color: #757575;
     padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.mail {
+/* .mail {
     width: 16px;
     height: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
 }
 .tel {
     width: 10px;
@@ -152,16 +154,14 @@ ul li.current a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
-}
+} */
 
 .contact-us-icon {
-    fill: #757575;
+    fill: currentColor;
 }
-.contact-us-header:hover .contact-us-icon,
-.contact-us-header:focus .contact-us-icon {
+.contact-us-header:hover,
+.contact-us-header:focus {
     color: var(--brand-color);
-    fill: var(--brand-color);
 }
 
 
@@ -434,21 +434,17 @@ ul li.current a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #AFB1B8;
 }
 
 .client-icon {
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
-/* .clients-link:hover,
+.clients-link:hover,
 .clients-link:focus {
     border: 1px solid #2196F3;
-} */
-
-.clients-link:hover .client-icon,
-.clients-link:focus .client-icon {
-    border: 1px solid #2196F3;
-    fill: var(--brand-color);
+    color: var(--brand-color);
 }
 
 .portfolio {
