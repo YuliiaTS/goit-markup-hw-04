@@ -377,6 +377,9 @@ ul li.current a {
     background-color: var(--brand-color);
 }
 
+.team-social-icon {
+    fill: var(--text-color);
+}
 
 .clients {
     padding: 94px 0;
