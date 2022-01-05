@@ -158,6 +158,7 @@ ul li.current a {
 
 .contact-us-icon {
     fill: currentColor;
+    margin-right: 10px;
 }
 .contact-us-header:hover,
 .contact-us-header:focus {
