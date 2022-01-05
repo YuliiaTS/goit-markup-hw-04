@@ -426,8 +426,8 @@ ul li.current a {
     margin-right: 30px;
 }
 
-.clients-item {
-    width: calc((100% - 180px) / 6);
+.clients-link {
+    width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -440,8 +440,13 @@ ul li.current a {
     fill: #AFB1B8;
 }
 
-.clients-item:hover .client-icon,
-.clients-item:focus .client-icon {
+/* .clients-link:hover,
+.clients-link:focus {
+    border: 1px solid #2196F3;
+} */
+
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon {
     border: 1px solid #2196F3;
     fill: var(--brand-color);
 }
