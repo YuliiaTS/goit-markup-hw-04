@@ -269,6 +269,8 @@ ul li.current a {
     background-color: #F5F4FA;
     height: 120px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .feature-icon {
@@ -426,11 +428,17 @@ ul li.current a {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: flex;
+    justify-content: center;
 }
 
 .clients-item:hover,
 .clients-item:focus {
     border: 1px solid #2196F3;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+    fill: var(--brand-color);
 }
 
 .portfolio {
